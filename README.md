@@ -540,4 +540,34 @@ rm 删除 dir 目录下的文件 file
 
 返回主目录中，删除 dir 文件夹
 
+![image](https://github.com/774512/test3/assets/148979339/1888c148-95b3-4604-bb9f-38ec196b8786)
+
+输入 help 显示指令帮助信息，或输入一个错误指令，文件系统自动输出指令帮助
+
+![image](https://github.com/774512/test3/assets/148979339/793501f9-9d01-45e8-ad44-008dcae83b05)
+
+打开文件 file 后，执行写命令向 file 写入信息，以 # 结束，成功，我们发现向 file 文件写入信息后，file 文件的大小变为了 12bytes
+
+![image](https://github.com/774512/test3/assets/148979339/76d84cc3-2db5-4cbf-b1e5-fed98f5a7079)
+
+read ，下面读取 file 文件中的信息，上一步写入的信息都被读出来了，然后关闭 file 文件
+
+![image](https://github.com/774512/test3/assets/148979339/c19bf655-453b-463b-a812-2baea84f66c7)
+
+改变 file 文件的权限，权限的表示方式为二进制 111b，最高位表示读权限，第二位表示写权限，最低位表示执行权限，1 表示有权限，0 表示无权限。先查看当前 file 文件的权限，为 111b，然后我们把 file 的权限改为 011b（十进制为3），即没有读权限，可以看到现在 file 文件已经没有读权限了，再次尝试读取 file 文件中的内容，被文件系统阻止，并提示 file 文件不能读
+
+![image](https://github.com/774512/test3/assets/148979339/73b21d2f-5ab7-4130-bb38-e2a40da4a149)
+
+测试检查磁盘状态功能
+
+![image](https://github.com/774512/test3/assets/148979339/e03d56c4-e343-4bbf-99ba-4b9f9617d518)
+
+测试格式化文件系统功能，发现文件系统中所有文件已被格式化
+
+![image](https://github.com/774512/test3/assets/148979339/b14829af-7110-48ad-b5ea-d8db9733ecb6)
+
+
+
+
+
 
