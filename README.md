@@ -508,8 +508,36 @@ static unsigned short search_file(unsigned short Inode) {
 ## 运行结果
 使用命令 gcc main.c init.c –o ext2 进行编译链接：
 
+![image](https://github.com/774512/test3/assets/148979339/27b92a0c-a2e9-41d4-9a6d-314aaf9ee428)
 
+键入 ./ext2 运行可执行文件，输入内置的用户名 test 和密码 test，登录成功，程序开始安装文件系统并执行初始化。使用 quit 命令退出程序，然后查看当前目录，发现多了一个 Ext2 文件，这是被程序创建出来的二进制文件，用于模拟磁盘空间
 
+![image](https://github.com/774512/test3/assets/148979339/d64460ff-e2b0-4a48-960a-657f86513c6c)
 
+下面我们开始测试程序功能：
+
+ls 功能，成功
+
+![image](https://github.com/774512/test3/assets/148979339/80226d5c-a373-48c2-89a1-f0fd3eeda05e)
+
+mkdir 创建目录，成功
+
+![image](https://github.com/774512/test3/assets/148979339/54670b3b-1bda-4116-bb33-327001f3dfd3)
+
+touch 创建文件，成功
+
+![image](https://github.com/774512/test3/assets/148979339/b8dce22d-9818-4da4-8a44-2df4e52bde84)
+
+cd 功能进入目录 dir，创建文件
+
+![image](https://github.com/774512/test3/assets/148979339/ced84622-1822-47e1-85b7-3ba5a84d4244)
+
+![image](https://github.com/774512/test3/assets/148979339/240e4c11-8ff5-4a2b-bb2d-bfe01ed9333e)
+
+rm 删除 dir 目录下的文件 file
+
+![image](https://github.com/774512/test3/assets/148979339/053848f5-f710-4bbb-b2e8-4cdb2e7e913a)
+
+返回主目录中，删除 dir 文件夹
 
 
