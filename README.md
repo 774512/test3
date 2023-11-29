@@ -14,5 +14,33 @@
 
 ![image](https://github.com/774512/test3/assets/148979339/9b4df141-6f6e-4c0a-985e-c4606fa9928e)
 
+一些常量：
+
+```
+#define VOLUME_NAME         "EXT2FS"    //卷名
+#define BLOCK_SIZE          512         //块大小
+#define DISK_SIZE           4612        //磁盘总块数
+
+#define DISK_START          0           //磁盘开始地址
+#define SB_SIZE             32          //超级块大小是32B
+
+#define GD_SIZE             32          //块组描述符大小是32B
+#define GDT_START           (0+512)     //块组描述符起始地址
+
+#define BLOCK_BITMAP        (512+512)   //块位图起始地址 2*512
+#define INODE_BITMAP        (1024+512)  //inode 位图起始地址 3*512
+
+#define INODE_TABLE         (1536+512)  //索引节点表起始地址 4*512
+#define INODE_SIZE          64          //每个inode的大小是 64B
+#define INODE_TABLE_COUNTS  4096        //inode entry 数
+
+#define DATA_BLOCK          264192      //数据块起始地址 4*512+4096*64
+#define DATA_BLOCK_COUNTS   4096        //数据块数
+
+#define BLOCKS_PER_GROUP    4612        //每组中的块数
+
+#define USER_MAX            4           //用户个数
+#define FOPEN_TABLE_MAX     16          //文件打开表大小
+```
 
 
